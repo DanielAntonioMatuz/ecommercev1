@@ -1,0 +1,30 @@
+.amplify-section {
+  line-height: 0px;
+  padding-top: 35px;
+}
+
+.amplify-sectionA {
+  line-height: 0px;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+
+.carousel-tamanio{
+  width: 70%;
+  height: 50%; /* originalmente 600px */
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-default.primary-btn {
+  border: 1px solid white;
+  background-color: #eb624c;
+}
+
+.bg-custom {
+  background-color: #eb624c !important;
+}
+
+.text-color {
+  color: #eb624c !important;
+}

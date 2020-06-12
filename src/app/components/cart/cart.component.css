@@ -1,0 +1,20 @@
+.amplify-cart {
+  line-height: 20px;
+  padding-top: 50px;
+  padding-bottom:  50px;
+}
+
+.bg-custom {
+  background-color: #0a262a;
+}
+
+.btn-default.primary-btn {
+  border: 1px solid white;
+  background-color: #eb624c;
+}
+
+@media screen and (max-width: 980px) {
+  .limite {
+    display: none;
+  }
+}
