@@ -11,7 +11,9 @@ export class ServicioService {
   constructor(private http:HttpClient) {
   }
 
-   Url='https://jsonplaceholder.typicode.com/todos/1';
+   Url='/producto/lista';
+
+
 
   getProductos(){
     return this.http.get<Producto[]>(this.Url);

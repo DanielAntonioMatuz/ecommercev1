@@ -28,3 +28,7 @@
 .text-color {
   color: #eb624c !important;
 }
+
+.btn-back {
+  background-color: transparent!important;
+}

@@ -1,112 +1,115 @@
-<!-- Fav icon -->
-<link href="/assets/images/logo/favicon.png" rel="shortcut icon">
-<!-- Font Family-->
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<!--bootstrap css-->
-<link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<head>
+  <title>Pago de producto</title>
+  <!-- Fav icon -->
+  <link href="/assets/images/logo/favicon.png" rel="shortcut icon">
+  <!-- Font Family-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!--bootstrap css-->
+  <link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
 
-<!-- Icons -->
-<link href="/assets/css/fontawesome.css" rel="stylesheet" type="text/css">
-<link href="/assets/css/themify.css" rel="stylesheet" type="text/css">
+  <!-- Icons -->
+  <link href="/assets/css/fontawesome.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/themify.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/themify.css" rel="stylesheet" type="text/css">
 
-<link href="/assets/css/themify.css" rel="stylesheet" type="text/css">
+  <!-- flat Icons -->
+  <link href="/assets/css/flaticon.css" rel="stylesheet" type="text/css">
 
-<!-- flat Icons -->
-<link href="/assets/css/flaticon.css" rel="stylesheet" type="text/css">
+  <!--magnific popup css-->
+  <link href="/assets/css/magnific-popup.css" rel="stylesheet">
 
-<!--magnific popup css-->
-<link href="/assets/css/magnific-popup.css" rel="stylesheet">
+  <!-- color css -->
+  <link href="/assets/css/color-7.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/owlcarousel/scss/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/owlcarousel/scss/owl.theme.default.min.css">
+</head>
 
-<!-- color css -->
-<link href="/assets/css/color-7.css" rel="stylesheet" type="text/css">
-
-<link rel="stylesheet" href="/assets/owlcarousel/scss/owl.carousel.min.css">
-<link rel="stylesheet" href="/assets/owlcarousel/scss/owl.theme.default.min.css">
-
-<div class="w-75">
-  <div class="row">
-    <div class="col-sm-8">
-      <section class="amplify-cart cart-section">
-        <div class="w-75 mx-auto">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card text-center">
-                <div class="card-header h2">
-                  Tu orden
-                </div>
-                <div class="card-body">
-                  <table class="table cart-table table-responsive-xs">
-                    <thead>
-                    <tr>
-                      <th scope="col" class="mx-auto">Producto</th>
-                      <th scope="col"></th>
-                      <th scope="col">Precio</th>
-                      <th scope="col"></th>
-                      <th scope="col"></th>
-                      <th scope="col">Precio total</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>
-                        <a href="#"><img alt="" src="../assets/images/inner-page/category/11.jpg"></a>
-                      </td>
-                      <td><a href="#">Nombre producto</a>
-                        <div class="mobile-cart-content row">
-                          <div class="col-xs-3">
-                            <div class="qty-box">
-                              <div class="input-group">
-                                <input class="form-control input-number" name="quantity" type="number"
-                                       value="1">
-                              </div>
+<body>
+  <section class="checkout-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <div class="checkout-form">
+            <form>
+              <div class="row">
+                <div class="w-auto col-sm-12 col-xs-12 mx-auto">
+                  <div class="checkout-details">
+                    <div class="order-box">
+                      <div class="title-box">
+                        <div>Producto <span>Total</span></div>
+                      </div>
+                      <ul class="qty">
+                        <li>Pink Slim Shirt × 1 <span>$25.10</span></li>
+                        <li>SLim Fit Jeans × 1 <span>$555.00</span></li>
+                      </ul>
+                      <ul class="sub-total">
+                        <li>Subtotal <span class="count">$380.10</span></li>
+                        <li>Metodo de envio
+                          <div class="shipping">
+                            <div class="shopping-option">
+                              <input id="free-shipping" name="free-shipping"
+                                     type="checkbox">
+                              <label for="free-shipping">Envio a domicilio</label>
+                            </div>
+                            <div class="shopping-option">
+                              <input id="local-pickup" name="local-pickup"
+                                     type="checkbox">
+                              <label for="local-pickup">Recoger en local</label>
                             </div>
                           </div>
-                          <div class="col-xs-3">
-                            <p class="h2">99.00</p>
-                          </div>
-                          <div class="col-xs-3">
-                            <h2 class="td-color">
-                              <a class="icon" href="#">
-                                <a href="#" class="btn btn-primary bg-transparent text-danger border-0 mx-auto">eliminar</a>
-                              </a>
-                            </h2>
-                          </div>
+                        </li>
+                      </ul>
+                      <ul class="total">
+                        <li>Total <span class="count">$620.00</span></li>
+                      </ul>
+                    </div>
+                    <div class="payment-box">
+                      <div class="upper-box">
+                        <div class="payment-options">
+                          <ul>
+                            <li>
+                              <div class="radio-option">
+                                <input checked="checked" id="payment-1" name="payment-group"
+                                       type="radio">
+                                <label for="payment-1">Pagar con tarjeta credito/debito<span
+                                  class="small-text"></span></label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="radio-option">
+                                <input id="payment-2" name="payment-group" type="radio">
+                                <label for="payment-2">Pago en OXXO<span
+                                  class="small-text"></span></label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="radio-option paypal">
+                                <input id="payment-3" name="payment-group" type="radio">
+                                <label for="payment-3">PayPal<span class="image"><img
+                                  alt=""
+                                  src="../assets/images/inner-page/paypal.png"></span></label>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
-                      </td>
-                      <td>
-                        <h2>$63.00</h2>
-                      </td>
-                    </tr>
-                    <tr>
-                      <!-- Iterar producto -->
-                    </tr>
-                    <tr>
-                      <!-- Iterar producto -->
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="card-footer text-muted  ">
-                  <div class="row">
-                    <div class="col">
-                      <a href="#" class="btn  bg-transparent border-0 text-black  mx-auto"> <div> <h3 class="td-color  padding-l"> Total: $99.00</h3> </div>  </a>
-                    </div>
-                    <div class="col-md-auto">
-                    </div>
-                    <div class="col col-lg-2">
+                      </div>
+                      <div class="text-right"><a class="btn btn-default primary-btn radius-0"
+                                                 href="#">Comprar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
-      </section>
-
+      </div>
     </div>
-    <div class="col-sm-4">col-sm-4</div>
   </div>
-</div>
+</section>
+</body>
+
 
 
 <!-- latest jquery-->
@@ -119,7 +122,6 @@
 <script src="/assets/js/custamizer-option.js"></script>
 <!--owl js-->
 <script src="/assets/js/owl.carousel.min.js"></script>
-
 <!--magnific popup js-->
 <script src="/assets/js/magnific-popup.js"></script>
 <script src="/assets/js/isotope.min.js"></script>
@@ -129,7 +131,5 @@
 <!-- script js-->
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/ecommerce.js"></script>
-
-
 <script src="jquery.min.js"></script>
 <script src="/assets/owlcarousel/js/owl.carousel.min.js"></script>

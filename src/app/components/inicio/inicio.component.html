@@ -1,6 +1,6 @@
 
 <head>
-
+  <title>Ecommerce a tu medida</title>
   <!-- Fav icon -->
   <link href="/assets/images/logo/favicon.png" rel="shortcut icon">
   <!-- Font Family-->
@@ -15,7 +15,6 @@
   <!-- Icons -->
   <link href="/assets/css/fontawesome.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/themify.css" rel="stylesheet" type="text/css">
-
   <link href="/assets/css/themify.css" rel="stylesheet" type="text/css">
 
   <!-- flat Icons -->
@@ -26,16 +25,16 @@
 
   <!-- color css -->
   <link href="/assets/css/color-7.css" rel="stylesheet" type="text/css">
-
   <link rel="stylesheet" href="/assets/owlcarousel/scss/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/owlcarousel/scss/owl.theme.default.min.css">
+
 </head>
+
+
 <body data-offset="50" data-spy="scroll" data-target=".navbar" class="">
 
-
-<div class="layout-ecommerce">
-
-  <section class="container" >
+  <div class="layout-ecommerce">
+    <section class="container" >
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -46,7 +45,7 @@
         <div class="carousel-item active">
           <img src="/assets/images/ecommerce/2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h2 class="text-muted">Sillas al 50% menos</h2>
+            <h2 class="text-muted">Todo en descuento</h2>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
@@ -67,11 +66,11 @@
       </div>
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">anterior</span>
       </a>
       <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only">siguiente</span>
       </a>
     </div>
   </section>
@@ -90,233 +89,22 @@
         </div>
         <div class="col-sm-12" >
           <div class="isotopeContainer row">
-            <div class="col-lg-3 col-sm-6 isotopeSelector branding new ">
-              <div class="product-box">
-                <a class="badge badge-success" href="#">On sale</a>
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/2.jpg"></a>
+              <div *ngFor="let product of producto" class="col-lg-3 col-sm-6 isotopeSelector branding new ">
+                <div class="product-box">
+                  <a class="badge badge-success" href="#">En oferta</a>
+                  <div class="img-wrapper">
+                    <div class="front">
+                      <a href="#"><img alt="" class="img-fluid"
+                                       src="/assets/images/inner-page/category/2.jpg"></a>
+                    </div>
+                    <div class="cart-info cart-wrap btn-back">
+                      <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a>
+                    </div>
                   </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/4.jpg"></a>
+                  <div class="product-detail">
+                    <a routerLink="/producto"><h6>{{product.nombre}}</h6></a>
+                    <h4>${{product.precio}}</h4>
                   </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Añadir a carrito"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o text-color"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a routerLink="/producto"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.01</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 isotopeSelector trending branding">
-              <div class="product-box">
-                <a class="badge badge-dark" href="#">50%</a>
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/13.jpg"></a>
-                  </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/2.jpg"></a>
-                  </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o text-color"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.00</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 isotopeSelector branding new trending">
-              <div class="product-box">
-                <a class="badge badge-light" href="#">On sale</a>
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/4.jpg"></a>
-                  </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/1.jpg"></a>
-                  </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.00</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 isotopeSelector trending Traditional">
-              <div class="product-box">
-                <a class="badge badge-light" href="#">On sale</a>
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/12.jpg"></a>
-                  </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/2.jpg"></a>
-                  </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o text-color"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.00</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 isotopeSelector new Traditional">
-              <div class="product-box">
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/11.jpg"></a>
-                  </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="/assets/images/inner-page/category/2.jpg"></a>
-                  </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o text-color"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.00</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 isotopeSelector new Traditional">
-              <div class="product-box">
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="../assets/images/inner-page/category/5.jpg"></a>
-                  </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="../assets/images/inner-page/category/2.jpg"></a>
-                  </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o text-color"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.00</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 isotopeSelector trending branding">
-              <div class="product-box">
-                <a class="badge badge-dark" href="#">Trending</a>
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="../assets/images/inner-page/category/3.jpg"></a>
-                  </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="../assets/images/inner-page/category/2.jpg"></a>
-                  </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o text-color"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.00</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 isotopeSelector Traditional">
-              <div class="product-box">
-                <div class="img-wrapper">
-                  <div class="front">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="../assets/images/inner-page/category/1.jpg"></a>
-                  </div>
-                  <div class="back">
-                    <a href="#"><img alt="" class="img-fluid"
-                                     src="../assets/images/inner-page/category/2.jpg"></a>
-                  </div>
-                  <div class="cart-info cart-wrap">
-                    <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                    </a>
-                    <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                            class="fa fa-heart-o text-color"></i></a> <a
-                    data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                    aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                                   title="Compare"><i
-                    aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-                </div>
-                <div class="product-detail">
-                  <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
-                    Shirt</h6></a>
-                  <h4>$500.00</h4>
-                </div>
               </div>
             </div>
           </div>
@@ -337,14 +125,14 @@
       <!--/.Indicators-->
       <div class="container ">
         <!--Controls-->
-        <nav aria-label="Page navigation example controls-top ">
+        <nav aria-label="Page navigation example controls-top">
           <ul class="pagination">
-            <li class="page-item">
+            <li class="page-item mx-auto">
               <a class="page-link bg-light text-dark" href="#multi-item-example" data-slide="prev" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="page-item">
+            <li class="page-item mx-auto">
               <a class="page-link bg-light text-dark" href="#multi-item-example" data-slide="next" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>
@@ -353,7 +141,6 @@
         </nav>
         <!--/.Controls-->
       </div>
-
       <div class="col-md-8 offset-md-2">
         <div class="title title2">
           <div class="sub-title">
@@ -374,14 +161,12 @@
                 <h4 class="card-title">Juguetes</h4>
               </div>
             </div>
-
             <div class="card border-0">
               <img src="assets/images/agency/blog/12.jpg" class="card-img-top border-amplify" alt="...">
               <div class="card-body mx-auto">
                 <h4 class="card-title">Belleza</h4>
               </div>
             </div>
-
             <div class="card border-0">
               <img src="assets/images/agency/blog/12.jpg" class="card-img-top" alt="...">
               <div class="card-body mx-auto">
@@ -394,7 +179,6 @@
 
         <!--Second slide-->
         <div class="carousel-item">
-
           <div class="card-deck">
             <div class="card border-0">
               <img src="assets/images/agency/blog/12.jpg" class="card-img-top border-amplify" alt="...">
@@ -402,14 +186,12 @@
                 <h4 class="card-title">Hogar</h4>
               </div>
             </div>
-
             <div class="card border-0">
               <img src="assets/images/agency/blog/12.jpg" class="card-img-top border-amplify" alt="...">
               <div class="card-body mx-auto">
                 <h4 class="card-title">Joyeria</h4>
               </div>
             </div>
-
             <div class="card border-0">
               <img src="assets/images/agency/blog/12.jpg" class="card-img-top border-amplify" alt="...">
               <div class="card-body mx-auto">
@@ -418,7 +200,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <!--/.Second slide-->
     </div>
@@ -452,15 +233,8 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/4.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
+              <div class="cart-info cart-wrap btn-back">
+                <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
             </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
@@ -481,16 +255,9 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/2.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-            </div>
+              <div class="cart-info cart-wrap btn-back">
+                    <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
+                </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
                 Shirt</h6></a>
@@ -510,16 +277,9 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/1.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-            </div>
+              <div class="cart-info cart-wrap btn-back">
+                    <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
+                </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
                 Shirt</h6></a>
@@ -539,16 +299,9 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/2.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-            </div>
+              <div class="cart-info cart-wrap btn-back">
+                    <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
+                </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
                 Shirt</h6></a>
@@ -567,16 +320,9 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/2.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-            </div>
+              <div class="cart-info cart-wrap btn-back">
+                    <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
+                </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
                 Shirt</h6></a>
@@ -595,16 +341,9 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/2.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-            </div>
+              <div class="cart-info cart-wrap btn-back">
+                    <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
+                </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
                 Shirt</h6></a>
@@ -624,16 +363,9 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/2.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-            </div>
+              <div class="cart-info cart-wrap btn-back">
+                    <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
+                </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
                 Shirt</h6></a>
@@ -652,16 +384,9 @@
                 <a href="#"><img alt="" class="img-fluid"
                                  src="../assets/images/inner-page/category/2.jpg"></a>
               </div>
-              <div class="cart-info cart-wrap">
-                <a href="#" title="Add to cart"><i aria-hidden="true" class="fa fa-shopping-cart text-color"></i>
-                </a>
-                <a href="javascript:void(0)" title="Add to Wishlist"><i aria-hidden="true"
-                                                                        class="fa fa-heart-o text-color"></i></a> <a
-                data-target="#quick-view" data-toggle="modal" href="#" title="Quick View"><i
-                aria-hidden="true" class="fa fa-search text-color"></i></a> <a href="compare.html"
-                                                                               title="Compare"><i
-                aria-hidden="true" class="fa fa-refresh text-color"></i></a></div>
-            </div>
+              <div class="cart-info cart-wrap btn-back">
+                    <a class="btn btn-default primary-btn  radius-0 mt-3" href="#">comprar</a></div>
+                </div>
             <div class="product-detail">
               <a href="product-page(no-sidebar).html"><h6>Slim Fit Cotton
                 Shirt</h6></a>
@@ -691,7 +416,6 @@
       </div>
     </div>
   </section>
-
 </div>
 
 <!-- Tap on Top-->

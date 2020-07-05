@@ -8,7 +8,7 @@ import {PagoComponent} from "./components/pago/pago.component";
 
 const app_routes: Routes = [
   {path: 'home', component: InicioComponent},
-  {path: 'producto', component: ProductoComponent},
+  {path: 'producto/:id', component: ProductoComponent},
   {path: 'cart', component: CartComponent},
   {path: 'pago', component: PagoComponent},
   {path: '404', component: Error404Component},

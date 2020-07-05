@@ -1,6 +1,8 @@
 export class Producto {
   userId: number
-  id: number
+  id: string
   title: String
-  completed: boolean
+  completed: string
+  contenido: string
+  imagen: string
 }

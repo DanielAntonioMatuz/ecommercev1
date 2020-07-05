@@ -1,0 +1,7 @@
+{
+    "/producto/lista/*": {
+      "target": "https://ecommerceapidb.herokuapp.com",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
